@@ -201,4 +201,44 @@ header nav a:hover {
     height: 40px;
   }
 }
+/* Header centrado forzado */
+header {
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+  height: 100px;           /* altura fija para que siempre esté centrado */
+  background: #111;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0;              /* eliminar padding lateral */
+}
+
+/* Logo y nombre */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* fuerza centrado */
+  gap: 0.8rem;
+}
+
+.logo-container h1 {
+  font-size: 2rem;
+  text-align: center;      /* centra el texto del nombre */
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* apila logo y nombre verticalmente */
+    height: auto;           /* altura automática en móvil */
+    gap: 0.5rem;
+  }
+
+  .logo-container h1 {
+    font-size: 1.5rem;
+  }
+}
+
 
