@@ -13,7 +13,7 @@ body {
 /* Header */
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
   background: #111;
@@ -152,3 +152,4 @@ header nav a:hover {
   width: 100%;
   height: 100%;
 }
+
