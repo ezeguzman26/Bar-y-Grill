@@ -172,7 +172,7 @@ header nav a:hover {
   /* Centrar la parte del menú de navegación */
 header nav {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.10rem;
   justify-content: center; /* Centra los links horizontalmente */
   flex-wrap: wrap; /* Para que no se rompa en móviles */
 }
