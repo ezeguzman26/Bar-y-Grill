@@ -175,6 +175,7 @@ header nav {
   gap: 1.5rem;
   justify-content: center; /* Centra los links horizontalmente */
   flex-wrap: wrap; /* Para que no se rompa en móviles */
+   width: 100%;
 }
 
 
@@ -205,6 +206,7 @@ header nav {
     height: 40px;
   }
 }
+
 
 
 
