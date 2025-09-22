@@ -164,19 +164,31 @@ header nav a:hover {
 /* Responsive */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    text-align: center;
-    gap: 0.5rem;
+    flex-direction: column; /* apilar logo/nombre/nav */
+    justify-content: center; /* centra verticalmente dentro del header */
+    align-items: center;     /* centra horizontalmente */
+    gap: 0.6rem;             /* espacio entre logo, nombre y nav */
+    padding: 1.2rem 1rem;    /* un poco más de padding para respirar */
+    height: auto;            /* que se adapte al contenido */
   }
 
-  /* Centrar la parte del menú de navegación */
-header nav {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center; /* Centra los links horizontalmente */
-  flex-wrap: wrap; /* Para que no se rompa en móviles */
-   width: 100%;
+  .logo-container h1 {
+    font-size: 1.5rem; /* tamaño proporcional */
+    text-align: center;
+  }
+
+  .logo-container {
+    gap: 0.6rem;
+    justify-content: center;
+  }
+
+  header nav {
+    flex-direction: column; /* links uno debajo del otro */
+    gap: 0.5rem;
+    align-items: center;
+  }
 }
+
 
 
   .hero-content h1 {
@@ -206,6 +218,7 @@ header nav {
     height: 40px;
   }
 }
+
 
 
 
