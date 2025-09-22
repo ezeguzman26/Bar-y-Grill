@@ -25,6 +25,7 @@ header {
 }
 
 header nav a {
+  align: center;
   color: #fff;
   text-decoration: none;
   margin-left: 1.5rem;
@@ -201,4 +202,5 @@ header nav a:hover {
     height: 40px;
   }
 }
+
 
