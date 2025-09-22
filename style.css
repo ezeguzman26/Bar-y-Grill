@@ -15,17 +15,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
   background: #111;
   color: #fff;
   position: sticky;
   top: 0;
   z-index: 100;
-  flex-wrap: wrap;
 }
 
 header nav a {
-  align: center;
   color: #fff;
   text-decoration: none;
   margin-left: 1.5rem;
@@ -57,17 +55,11 @@ header nav a:hover {
   align-items: center;
   text-align: center;
   color: #fff;
-  padding: 0 1rem;
 }
 
 .hero-content h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
-}
-
-.hero-content p {
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -160,68 +152,3 @@ header nav a:hover {
   width: 100%;
   height: 100%;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column; /* apilar logo/nombre/nav */
-    justify-content: center; /* centra verticalmente dentro del header */
-    gap: 0.6rem;             /* espacio entre logo, nombre y nav */
-    padding: 1.2rem 1rem;    /* un poco más de padding para respirar */
-    height: auto;            /* que se adapte al contenido */
-  }
-.logo-container h1 {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .logo-container {
-    gap: 0.6rem;
-    justify-content: center;
-  }
-
-
-  
-}
-
-
-
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 0.95rem;
-  }
-
-  .about {
-    flex-direction: column;
-  }
-
-  .menu-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/* Ajuste tamaño del nombre del bar en móviles */
-@media (max-width: 768px) {
-  .logo-container h1 {
-    font-size: 1.5rem; /* más pequeño y proporcional */
-  }
-
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
