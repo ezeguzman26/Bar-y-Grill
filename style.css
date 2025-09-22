@@ -190,3 +190,15 @@ header nav a:hover {
     grid-template-columns: 1fr;
   }
 }
+/* Ajuste tamaño del nombre del bar en móviles */
+@media (max-width: 768px) {
+  .logo-container h1 {
+    font-size: 1.5rem; /* más pequeño y proporcional */
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
