@@ -171,15 +171,7 @@ header nav a:hover {
     height: auto;            /* que se adapte al contenido */
   }
 
-  .logo-container h1 {
-    font-size: 1.5rem; /* tamaño proporcional */
-    text-align: center;
-  }
 
-  .logo-container {
-    gap: 0.6rem;
-    justify-content: center;
-  }
 
   header nav {
     flex-direction: column; /* links uno debajo del otro */
@@ -217,6 +209,7 @@ header nav a:hover {
     height: 40px;
   }
 }
+
 
 
 
