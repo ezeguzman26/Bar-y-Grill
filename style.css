@@ -169,11 +169,14 @@ header nav a:hover {
     gap: 0.5rem;
   }
 
-  header nav {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+  /* Centrar la parte del menú de navegación */
+header nav {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center; /* Centra los links horizontalmente */
+  flex-wrap: wrap; /* Para que no se rompa en móviles */
+}
+
 
   .hero-content h1 {
     font-size: 2rem;
@@ -202,5 +205,6 @@ header nav a:hover {
     height: 40px;
   }
 }
+
 
 
