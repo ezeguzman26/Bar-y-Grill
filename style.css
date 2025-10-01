@@ -7,7 +7,7 @@
 
 body {
   color: #222;
-  line-height: 1.6;
+  line-height: 2.6;
 }
 
 /* Header */
@@ -241,4 +241,81 @@ header {
   }
 }
 
+/* Contenedor del menú */
+.hamburger-menu {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+}
 
+/* Icono de hamburguesa */
+.hamburger {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hamburger div {
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Menú desplegable */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* fuera de pantalla */
+  width: 200px;
+  height: 100%;
+  background-color: #111;
+  padding-top: 60px;
+  transition: 0.3s;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu li {
+  margin: 20px 0;
+
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+}
+
+/* Menú abierto */
+.nav-menu.active {
+  left: 0;
+}
+
+/* Animación del icono */
+.hamburger.active div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+.close-menu {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
