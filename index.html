@@ -5,21 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sovereign & Co. Bar & Grill</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/png" href="img.png" />
 </head>
 <body>
-  <!-- Header -->
   <header>
-    <div class="logo-container">
-
-      
-      <h1>Bar & Grill</h1>
+  <div class="hamburger-menu">
+    <!-- Icono de hamburguesa -->
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
+    <!-- Menú desplegable -->
+    <nav class="nav-menu" id="nav-menu">
+         <div class="close-menu" id="close-menu">&times;</div>
+      <ul>
+        <li><a href="#hero">inicio</a></li>
+        <li><a href="#about">Sobre Nosotros</a></li>
+        <li><a href="#menu">Menú Exclusivo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
 
-  </header>
+  <div class="logo-container">
+    <h1>Bar & Grill</h1>
+  </div>
+</header>
+
 
   <!-- Hero -->
-  <section class="hero">
+  <section id="hero" class="hero">
     <div class="hero-content">
       <h1>Experiencia Gastronómica de Clase Mundial</h1>
       <p>Un bar exclusivo donde la tradición y la innovación se encuentran.</p>
@@ -86,12 +102,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
