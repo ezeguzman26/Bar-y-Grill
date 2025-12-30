@@ -9,7 +9,9 @@ body {
   color: #222;
   line-height: 2.6;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Header */
 header {
   display: flex;
@@ -257,6 +259,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+
 }
 
 .hamburger div {
@@ -268,7 +271,7 @@ header {
 
 /* Menú desplegable */
 .nav-menu {
-  position: fixed;
+  position:fixed;
   top: 0;
   left: -250px; /* fuera de pantalla */
   width: 200px;
@@ -276,6 +279,7 @@ header {
   background-color: #111;
   padding-top: 60px;
   transition: 0.3s;
+  
 }
 
 .nav-menu ul {
